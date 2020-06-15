@@ -1,0 +1,49 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		title Travel
+
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		
+		link(rel="stylesheet", href="./css/index.css")
+	body
+		block body
+			.canvas
+				header.header
+					.top-menu.layout
+						.top-menu__logo
+							a.top-menu__logo-link(href="#")
+								img(src="./img/logo.png", alt="Логотип")
+						.top-menu__menu
+							a.top-menu__menu-link(href="#") home
+							a.top-menu__menu-link(href="#") about
+							a.top-menu__menu-link(href="#") services
+							a.top-menu__menu-link(href="#") gallery
+							a.top-menu__menu-link(href="#") contact
+					.banner.layout
+						.banner__box
+							.banner__name #[span.banner__name.color-pink travel is] <br>beautiful
+							.banner__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+						.request-form
+							.request-form__name Request a quote
+							form.form(action="")
+								input.form__name(type="text" placeholder="Full Name")
+								input.form__name(type="email" placeholder="Email Adress")
+								input.form__name(type="tel" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Phone Number")
+								input.form__name(type="text" placeholder="Country")
+								label.form__label
+									input.form__checkbox(type="checkbox") 
+									| I accept the terms & conditions
+								button.form__btn Send
+				main.main
+					block content
+				footer.footer
+					.footer__box.layout
+						.footer__copyright All Rights Reserved |  2016  |  Designed with love by #[span.footer_span.color-pink DesignCoon]
+						.footer-logo
+							a.footer-logo__link(href="#")
+								img(src="./img/logo_min.png", alt="Логотип")
+
+
+							

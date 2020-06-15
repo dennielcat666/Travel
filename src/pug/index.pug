@@ -1,0 +1,80 @@
+extends extends/_layout
+
+block content
+	.services_block.layout
+		.services_block__title #[span.services_block__title.color-pink Our] services
+		.services_block__card
+			-
+				cards = [
+					['./img/heart_serv.png', 'Making your trip beautiful and easier'],
+					['./img/tools_serv.png', 'Tools to help you succeed tommorow'],
+					['./img/light-bulb_serv.png', 'Ideas that will blow you out the blue.'],
+					['./img/navigate_serv.png', 'Navigate your path to beautiful world.'],
+				]
+			each item in cards
+				.services_block__card-wrap
+					.card__img(style="background-image: url("+ item[0] + ")")
+					.card__text=item[1]
+	.story
+		.story__block.layout
+			.story__text We are in business for over 6 years providing amazing services to client and people love them to the core. View our story to know more.
+			a.story__link(href="#") Our story
+	.offer
+		.offer__block.layout
+			.offer__title Pricing
+			.offer__cards
+				.offer__card-wrap
+					.card-wrap__name Starter
+					.card-wrap__price Free
+					.card-wrap__info Free Service
+					.card-wrap__info Multiple Accounts
+					.card-wrap__info Management No
+					.card-wrap__info --
+					.card-wrap__info --
+					a.card-wrap__link(href="#") try
+				.offer__card-wrap
+					.card-wrap__name Business
+					.card-wrap__price $97
+					.card-wrap__info Free Service
+					.card-wrap__info Multiple Accounts
+					.card-wrap__info Management No
+					.card-wrap__info Unlimited Data
+					.card-wrap__info --
+					a.card-wrap__link(href="#") sign up
+				.offer__card-wrap
+					.card-wrap__name Professional
+					.card-wrap__price $297
+					.card-wrap__info Free Service
+					.card-wrap__info Multiple Accounts
+					.card-wrap__info Management No
+					.card-wrap__info Unlimited Data
+					.card-wrap__info Whatever You Need
+					a.card-wrap__link(href="#") sign up
+	.life
+		.life__block.layout
+			.life__test
+				.test__title Testimonial
+				.test__mail-first
+					.mail__text I have been involved with this comapny for ages and just want to say this is a great work by designcoon.
+					.mail__for DJ Bravo - Frequent Travelera
+					img.mail__photo-first(src="./img/mail_photo1.png", alt="Фото")
+				.test__mail-second
+					.mail__text I have been involved with this comapny for ages and just .
+					.mail__for DJ Bravo - Frequent Travelera
+					img.mail__photo-second(src="./img/mail_photo2.png", alt="Фото")
+			.life__gallery
+				.gallery__title Gallery
+				.gallery__box
+					.gallery__block
+						img.gallery__img(src="./img/gallery_1.png", alt="Фото галереи")
+						img.gallery__img(src="./img/gallery_2.png", alt="Фото галереи")
+					.gallery__block
+						img.gallery__img(src="./img/gallery_3.png", alt="Фото галереи")
+						img.gallery__img(src="./img/gallery_4.png", alt="Фото галереи")
+					.gallery__block
+						img.gallery__img(src="./img/gallery_5.png", alt="Фото галереи")
+						img.gallery__img(src="./img/gallery_6.png", alt="Фото галереи")
+				a.gallery__link(href="#") View more pictures
+				
+
+			
