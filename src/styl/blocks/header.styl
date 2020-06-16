@@ -33,13 +33,14 @@
 		@media mobile
 			flex-wrap wrap
 			justify-content center
+			align-items flex-start
 	
 	&__box
 		position relative
-	
+		@media mobile
+			position static
+
 	&__menu-link
-		position relative
-		// z-index 3
 		display inline-block
 		padding 10px 15px
 		text-transform uppercase
@@ -62,6 +63,9 @@
 	background-color rgba(0 0 0 0.2)
 	padding 0px 10px 5px 9px
 	border-radius 5px
+	@media mobile
+		position static
+
 	&--last
 		padding 0px 50px 5px 9px
 
@@ -78,7 +82,7 @@
 	position relative
 	margin-bottom 0px
 	@media tablet
-		margin-top 75px
+		margin-top 120px
 
 	&__box
 		max-width 535px
