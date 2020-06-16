@@ -5,7 +5,7 @@ html(lang="ru")
 		title Travel
 
 		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
-		
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 		link(rel="stylesheet", href="./css/index.css")
 	body
 		block body
@@ -16,11 +16,35 @@ html(lang="ru")
 							a.top-menu__logo-link(href="#")
 								img(src="./img/logo.png", alt="Логотип")
 						.top-menu__menu
-							a.top-menu__menu-link(href="#") home
-							a.top-menu__menu-link(href="#") about
-							a.top-menu__menu-link(href="#") services
-							a.top-menu__menu-link(href="#") gallery
-							a.top-menu__menu-link(href="#") contact
+							.top-menu__box
+								a.top-menu__menu-link(href="#") home
+							.top-menu__box.js-menu-box
+								.top-menu__menu-link.js-menu-link about
+								ul.sub-menu.js-sub-menu
+									li.sub-menu__item.js-sub-menu-item
+										a.sub-menu__link(href="#") Company
+									li.sub-menu__item.js-sub-menu-item
+										a.sub-menu__link(href="#") Partners
+							.top-menu__box.js-menu-box
+								.top-menu__menu-link.js-menu-link services
+								ul.sub-menu.js-sub-menu
+									li.sub-menu__item.js-sub-menu-item
+										a.sub-menu__link(href="#") Hotels
+									li.sub-menu__item.js-sub-menu-item
+										a.sub-menu__link(href="#") Tours
+									li.sub-menu__item.js-sub-menu-item
+										a.sub-menu__link(href="#") Air Tickets
+									li.sub-menu__item.js-sub-menu-item
+										a.sub-menu__link(href="#") Train Tickets
+							.top-menu__box.js-menu-box
+								.top-menu__menu-link.js-menu-link gallery
+								ul.sub-menu.sub-menu--last.js-sub-menu
+									li.sub-menu__item.js-sub-menu-item
+										a.sub-menu__link(href="#") Photo
+									li.sub-menu__item.js-sub-menu-item
+										a.sub-menu__link(href="#") Video
+							.top-menu__box
+								a.top-menu__menu-link(href="#") contact
 					.banner.layout
 						.banner__box
 							.banner__name #[span.banner__name.color-pink travel is] <br>beautiful
@@ -44,6 +68,7 @@ html(lang="ru")
 						.footer-logo
 							a.footer-logo__link(href="#")
 								img(src="./img/logo_min.png", alt="Логотип")
+			<script src="./js/bundle.js"></script>
 
 
 							

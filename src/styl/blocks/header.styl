@@ -34,7 +34,12 @@
 			flex-wrap wrap
 			justify-content center
 	
+	&__box
+		position relative
+	
 	&__menu-link
+		position relative
+		// z-index 3
 		display inline-block
 		padding 10px 15px
 		text-transform uppercase
@@ -46,6 +51,27 @@
 			background-color pink-color
 			color #fff
 			border-radius 5px
+.sub-menu
+	position absolute
+	top 38px
+	left 0px
+	font-family Montserrat
+	font-weight 500
+	font-size 16px
+	display none
+	background-color rgba(0 0 0 0.2)
+	padding 0px 10px 5px 9px
+	border-radius 5px
+	&--last
+		padding 0px 50px 5px 9px
+
+	&__item
+		list-style none
+		margin-top 10px
+		border-bottom 2px solid transparent
+		&:hover
+			border-bottom 2px solid pink-color
+
 .banner
 	display flex
 	margin-top 156px

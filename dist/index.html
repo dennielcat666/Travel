@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Travel</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="./css/index.css">
   </head>
   <body>
@@ -11,7 +11,33 @@
       <header class="header">
         <div class="top-menu layout">
           <div class="top-menu__logo"><a class="top-menu__logo-link" href="#"><img src="./img/logo.png" alt="Логотип"></a></div>
-          <div class="top-menu__menu"><a class="top-menu__menu-link" href="#">home</a><a class="top-menu__menu-link" href="#">about</a><a class="top-menu__menu-link" href="#">services</a><a class="top-menu__menu-link" href="#">gallery</a><a class="top-menu__menu-link" href="#">contact</a></div>
+          <div class="top-menu__menu">
+            <div class="top-menu__box"><a class="top-menu__menu-link" href="#">home</a></div>
+            <div class="top-menu__box js-menu-box">
+              <div class="top-menu__menu-link js-menu-link">about</div>
+              <ul class="sub-menu js-sub-menu">
+                <li class="sub-menu__item js-sub-menu-item"><a class="sub-menu__link" href="#">Company</a></li>
+                <li class="sub-menu__item js-sub-menu-item"><a class="sub-menu__link" href="#">Partners</a></li>
+              </ul>
+            </div>
+            <div class="top-menu__box js-menu-box">
+              <div class="top-menu__menu-link js-menu-link">services</div>
+              <ul class="sub-menu js-sub-menu">
+                <li class="sub-menu__item js-sub-menu-item"><a class="sub-menu__link" href="#">Hotels</a></li>
+                <li class="sub-menu__item js-sub-menu-item"><a class="sub-menu__link" href="#">Tours</a></li>
+                <li class="sub-menu__item js-sub-menu-item"><a class="sub-menu__link" href="#">Air Tickets</a></li>
+                <li class="sub-menu__item js-sub-menu-item"><a class="sub-menu__link" href="#">Train Tickets</a></li>
+              </ul>
+            </div>
+            <div class="top-menu__box js-menu-box">
+              <div class="top-menu__menu-link js-menu-link">gallery</div>
+              <ul class="sub-menu sub-menu--last js-sub-menu">
+                <li class="sub-menu__item js-sub-menu-item"><a class="sub-menu__link" href="#">Photo</a></li>
+                <li class="sub-menu__item js-sub-menu-item"><a class="sub-menu__link" href="#">Video</a></li>
+              </ul>
+            </div>
+            <div class="top-menu__box"><a class="top-menu__menu-link" href="#">contact</a></div>
+          </div>
         </div>
         <div class="banner layout">
           <div class="banner__box">
@@ -124,6 +150,6 @@
           <div class="footer-logo"><a class="footer-logo__link" href="#"><img src="./img/logo_min.png" alt="Логотип"></a></div>
         </div>
       </footer>
-    </div>
+    </div><script src="./js/bundle.js"></script>
   </body>
 </html>
