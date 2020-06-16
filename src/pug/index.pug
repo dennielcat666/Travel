@@ -2,7 +2,7 @@ extends extends/_layout
 
 block content
 	.services_block.layout
-		.services_block__title #[span.services_block__title.color-pink Our] services
+		h2.services_block__title #[span.services_block__title.color-pink Our] services
 		.services_block__card
 			-
 				cards = [
@@ -21,7 +21,7 @@ block content
 			a.story__link(href="#") Our story
 	.offer
 		.offer__block.layout
-			.offer__title Pricing
+			h2.offer__title Pricing
 			.offer__cards
 				.offer__card-wrap
 					.card-wrap__name Starter
@@ -53,7 +53,7 @@ block content
 	.life
 		.life__block.layout
 			.life__test
-				.test__title Testimonial
+				h2.test__title Testimonial
 				.test__mail-first
 					.mail__text I have been involved with this comapny for ages and just want to say this is a great work by designcoon.
 					.mail__for DJ Bravo - Frequent Travelera
@@ -63,7 +63,7 @@ block content
 					.mail__for DJ Bravo - Frequent Travelera
 					img.mail__photo-second(src="./img/mail_photo2.png", alt="Фото")
 			.life__gallery
-				.gallery__title Gallery
+				h2.gallery__title Gallery
 				.gallery__box
 					.gallery__block
 						img.gallery__img(src="./img/gallery_1.png", alt="Фото галереи")
