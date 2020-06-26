@@ -61,12 +61,6 @@ gulp.task('dist',  function dist (cb) {
         }))
         .pipe(uglify())
         .pipe(gulp.dest('./dist/js/'));
-    
-    // gulp.src('./src/sass/index.scss')
-    //     .pipe(sass().on('error', sass.logError))
-    //     /* .pipe(concat('main.css')) */
-    //     .pipe(uglifycss())
-    //     .pipe(gulp.dest('./dist/css'));
     gulp.src('./src/styl/index.styl')
         .pipe(stylus())
         .pipe(uglifycss())
