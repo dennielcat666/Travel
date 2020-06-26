@@ -10,7 +10,7 @@ const stylus = require('gulp-stylus');
 
 sass.compiler = require('node-sass');
 
-gulp.task('dev',  function dev (cb) {
+gulp.task('dev', function dev (cb) {
 
     gulp.src('./src/fonts/*')
         .pipe(gulp.dest('./dev/fonts/'));
@@ -39,7 +39,7 @@ gulp.task('dev',  function dev (cb) {
 
 
 
-gulp.task('dist',  function dist (cb) {
+gulp.task('dist', function dist (cb) {
 
     gulp.src('./src/pug/*.pug')
         .pipe(pug({pretty: true}))
