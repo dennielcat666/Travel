@@ -1,9 +1,9 @@
 # Travel
 
 ### GitHub Pages
-```bash
+
 https://dennielcat666.github.io/Travel/dist/index.html
-```
+
 
 ## Адаптивная верстка
 
