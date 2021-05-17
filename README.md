@@ -5,10 +5,6 @@
 https://dennielcat666.github.io/Travel/dist/index.html
 ```
 
-## Блок меню
-
-Выпадающие меню на ABOUT/SERVICES/GALLERY
-
 ## Адаптивная верстка
 
 Есть.
